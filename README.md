@@ -71,6 +71,12 @@ CMCP is not currently positioned as:
 - a semantic classifier for all risky inferences
 - a distributed storage system
 
+## Contact
+
+For technical review, routing, or follow-up discussion:
+
+- Email: adarobot666@gmail.com
+
 ## Verification
 
 CMCP includes executable verification, not only prose.

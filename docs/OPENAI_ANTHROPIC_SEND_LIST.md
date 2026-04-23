@@ -27,7 +27,7 @@ CMCP should be evaluated as a standalone artifact:
 
 Attach:
 
-- `cmcp-openclaw-openai-review-20260424.zip`
+- `cmcp-openai-review-20260424.zip`
 
 ### Primary Proposal
 
@@ -72,7 +72,7 @@ Do not claim:
 
 Attach:
 
-- `cmcp-openclaw-anthropic-review-20260424.zip`
+- `cmcp-anthropic-review-20260424.zip`
 
 ### Primary Proposal
 
