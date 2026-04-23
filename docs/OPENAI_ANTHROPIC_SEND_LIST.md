@@ -50,6 +50,8 @@ Use:
 
 - `docs/OUTREACH_EMAIL_TEMPLATES.md`
 - section: `OpenAI`
+- `docs/OFFICIAL_SUBMISSION_MESSAGES.md`
+- sections: `OpenAI: Developer Community Post`, `OpenAI: Help Center / Support Messenger`, and `OpenAI: Contact Sales Form`
 
 ### Review Ask
 
@@ -93,6 +95,8 @@ Use:
 
 - `docs/OUTREACH_EMAIL_TEMPLATES.md`
 - section: `Anthropic`
+- `docs/OFFICIAL_SUBMISSION_MESSAGES.md`
+- sections: `Anthropic: Claude API / Console Support Messenger` and `Anthropic: Claude Platform / Sales Form`
 
 ### Review Ask
 

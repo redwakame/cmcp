@@ -149,6 +149,7 @@ For a host integrator:
 - GitHub prep checklist: [docs/GITHUB_PREP_CHECKLIST.md](docs/GITHUB_PREP_CHECKLIST.md)
 - Bug disposition: [docs/BUG_DISPOSITION.md](docs/BUG_DISPOSITION.md)
 - Outreach email templates: [docs/OUTREACH_EMAIL_TEMPLATES.md](docs/OUTREACH_EMAIL_TEMPLATES.md)
+- Official submission messages: [docs/OFFICIAL_SUBMISSION_MESSAGES.md](docs/OFFICIAL_SUBMISSION_MESSAGES.md)
 - Product positioning: [docs/PRODUCT_POSITIONING.md](docs/PRODUCT_POSITIONING.md)
 - Publish plan: [docs/PUBLISH_PLAN.md](docs/PUBLISH_PLAN.md)
 - OpenAI proposal: [docs/openai-cmcp-proposal-en.md](docs/openai-cmcp-proposal-en.md)
