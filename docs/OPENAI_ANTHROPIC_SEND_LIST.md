@@ -13,6 +13,13 @@ Use this as the send checklist so the review package stays consistent and does n
 
 Do not include `V2` source folders, internal template buckets, or unrelated workspace material.
 
+If useful, link OpenClaw Continuity as separate implementation evidence:
+
+- https://github.com/redwakame/openclaw-continuity
+
+Do not bundle OpenClaw Continuity into the CMCP review package unless the
+reviewer explicitly asks for the product implementation package.
+
 CMCP should be evaluated as a standalone artifact:
 
 - contract
@@ -43,6 +50,7 @@ Include or link:
 - `docs/REVIEW_PACKET.md`
 - `docs/CMCP_AUDIT_SUMMARY.md`
 - `docs/PUBLISH_PLAN.md`
+- optional implementation evidence: `https://github.com/redwakame/openclaw-continuity`
 
 ### Suggested Email Template
 
@@ -88,6 +96,7 @@ Include or link:
 - `docs/REVIEW_PACKET.md`
 - `docs/CMCP_AUDIT_SUMMARY.md`
 - `docs/PUBLISH_PLAN.md`
+- optional implementation evidence: `https://github.com/redwakame/openclaw-continuity`
 
 ### Suggested Email Template
 
@@ -136,3 +145,4 @@ Before sending, confirm:
 - target-specific proposal exists
 - no local machine absolute paths appear in the package
 - no `V2` package is included as supporting material
+- OpenClaw Continuity is linked only, not bundled, unless specifically requested

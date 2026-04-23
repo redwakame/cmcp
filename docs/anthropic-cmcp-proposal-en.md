@@ -19,6 +19,13 @@ These decisions are often implemented indirectly. Some are encoded in prompts. S
 
 My proposal is that this layer should be treated as a contract in its own right.
 
+The concrete implementation reference is
+[OpenClaw Continuity](https://github.com/redwakame/openclaw-continuity), a
+usable OpenClaw skill package for `/new` carryover, staged memory, tracked
+follow-up, time-aware care, natural-language settings, closure, cooldown, and
+structured writeback. CMCP remains the primary review artifact; OpenClaw
+Continuity is linked as implementation evidence.
+
 I built a prototype called Continuity Memory Contract Plus, or CMCP. It is not a memory model and not a vector store. It is a policy contract that defines:
 
 - memory layers and their boundaries

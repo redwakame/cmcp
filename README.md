@@ -4,6 +4,11 @@ CMCP is a policy-first continuity memory bundle for OpenClaw.
 
 It is designed for builders who want long-lived agent behavior without leaving memory semantics to prompt drift, UI copy, storage heuristics, or host-local guesswork.
 
+Concrete implementation reference:
+[OpenClaw Continuity](https://github.com/redwakame/openclaw-continuity)
+is the usable OpenClaw skill package that demonstrates the product path behind
+this policy contract.
+
 The bundle includes:
 
 - `CMCP Core`: the canonical continuity memory contract
@@ -54,6 +59,20 @@ Key entry points:
 - Guard hook: [hooks/cmcp-guard/HOOK.md](hooks/cmcp-guard/HOOK.md)
 - Audit summary: [docs/CMCP_AUDIT_SUMMARY.md](docs/CMCP_AUDIT_SUMMARY.md)
 - Review packet: [docs/REVIEW_PACKET.md](docs/REVIEW_PACKET.md)
+
+## Relationship To OpenClaw Continuity
+
+CMCP is the policy contract and review artifact.
+
+[OpenClaw Continuity](https://github.com/redwakame/openclaw-continuity) is the
+separate product skill package that demonstrates the same continuity problem in
+a usable OpenClaw implementation: `/new` carryover, staged memory, tracked
+follow-up, time-aware care, natural-language settings, closure, cooldown, and
+structured writeback.
+
+For OpenAI or Anthropic review, treat CMCP as the primary artifact and
+OpenClaw Continuity as implementation evidence. The two should not be merged
+into one review package.
 
 ## Current Product State
 

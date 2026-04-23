@@ -28,6 +28,8 @@ Recommended items to include:
 Optional:
 
 - target-specific proposal doc
+- OpenClaw Continuity link as implementation evidence:
+  `https://github.com/redwakame/openclaw-continuity`
 - one sentence telling the reviewer whether the materials above are repo URLs or attached files
 
 ## OpenAI
@@ -51,6 +53,13 @@ The package includes:
 - a host integration boundary
 - adversarial and end-to-end verification
 - a review packet and audit summary
+
+There is also a separate implementation reference:
+https://github.com/redwakame/openclaw-continuity
+
+That repository is the usable OpenClaw skill package. CMCP remains the primary
+review artifact; OpenClaw Continuity is included only as evidence that the
+contract comes from a real product path.
 
 I am not asking for immediate adoption. I am asking whether memory policy should be treated as an explicit platform concern rather than left to prompts, storage heuristics, or host-local glue code.
 
@@ -95,6 +104,13 @@ The bundle includes:
 - adversarial verification
 - end-to-end verification
 - an audit summary of enforced invariants and deliberately deferred boundaries
+
+There is also a separate implementation reference:
+https://github.com/redwakame/openclaw-continuity
+
+That repository is the usable OpenClaw skill package. CMCP remains the primary
+review artifact; OpenClaw Continuity is included only as evidence that the
+contract comes from a real product path.
 
 I am not claiming CMCP is a standard or that it solves semantic inference detection. The narrower question is whether policy-aligned memory deserves a separable runtime layer.
 

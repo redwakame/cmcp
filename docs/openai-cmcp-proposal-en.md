@@ -21,6 +21,13 @@ The same user utterance can map to different outcomes depending on the surface a
 
 That is the problem CMCP is trying to solve.
 
+The concrete implementation reference is
+[OpenClaw Continuity](https://github.com/redwakame/openclaw-continuity), a
+usable OpenClaw skill package for `/new` carryover, staged memory, tracked
+follow-up, time-aware care, natural-language settings, closure, cooldown, and
+structured writeback. CMCP remains the primary review artifact; OpenClaw
+Continuity is linked as implementation evidence.
+
 CMCP, short for Continuity Memory Contract Plus, is a policy-first contract for agent memory behavior. It defines memory layers, write authorization, promotion rules, forbidden categories, `/new` carry-over behavior, onboarding-derived memory, correction semantics, and host integration boundaries. The important part is not the names of the layers. The important part is that each layer has explicit entry conditions and explicit non-goals.
 
 For example:

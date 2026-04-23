@@ -15,6 +15,13 @@ Use the GitHub release as the downloadable snapshot:
 
 - https://github.com/redwakame/cmcp/releases/tag/v0.1.0-review
 
+Use OpenClaw Continuity only as a separate implementation reference:
+
+- https://github.com/redwakame/openclaw-continuity
+
+Do not bundle OpenClaw Continuity into the CMCP submission unless a reviewer
+explicitly asks for the product implementation package.
+
 Do not attach zip files as the first delivery method unless the form or support channel explicitly supports attachments or asks for them.
 
 ## OpenAI: Developer Community Post
@@ -41,6 +48,11 @@ I am sharing a technical review artifact called Continuity Memory Contract Plus 
 https://github.com/redwakame/cmcp
 
 CMCP is a policy-first continuity memory contract built against OpenClaw as a concrete testbed.
+
+Concrete implementation evidence:
+https://github.com/redwakame/openclaw-continuity
+
+CMCP remains the primary review artifact. OpenClaw Continuity is linked only to show the usable OpenClaw skill package behind the policy boundary.
 
 The narrow question is whether long-lived agent memory should be treated as an explicit runtime/platform contract rather than an implicit behavior spread across prompts, storage heuristics, UI copy, and host-local glue code.
 
@@ -107,6 +119,11 @@ https://github.com/redwakame/cmcp
 
 CMCP is a policy-first continuity memory contract for long-lived agents. It defines explicit rules for what may persist, what must remain session-only, how /new should carry continuity, how onboarding can create durable state, and how user correction overrides prior memory.
 
+Concrete implementation evidence:
+https://github.com/redwakame/openclaw-continuity
+
+CMCP remains the primary review artifact. OpenClaw Continuity is linked only to show the usable OpenClaw skill package behind the policy boundary.
+
 The artifact includes a contract, runtime guard, host integration boundary, adversarial tests, end-to-end tests, and an audit summary:
 
 https://github.com/redwakame/cmcp/blob/main/docs/REVIEW_PACKET.md
@@ -145,6 +162,11 @@ https://github.com/redwakame/cmcp
 
 CMCP is a policy-first continuity memory contract for long-lived agents. It is built against OpenClaw as a concrete testbed and includes a contract, runtime guard, host integration boundary, adversarial verification, end-to-end verification, and an audit summary.
 
+Concrete implementation evidence:
+https://github.com/redwakame/openclaw-continuity
+
+CMCP remains the primary review artifact. OpenClaw Continuity is linked only to show the usable OpenClaw skill package behind the policy boundary.
+
 The question is whether memory policy for long-lived agents should be treated as an explicit platform/runtime/SDK boundary rather than left to prompts, storage heuristics, or host-local glue code.
 
 OpenAI-facing proposal:
@@ -176,6 +198,11 @@ I am sharing a technical review artifact that may be relevant to long-running ag
 https://github.com/redwakame/cmcp
 
 CMCP is a policy-first continuity memory contract. It defines explicit rules for what may persist, what must remain session-only, what can become tracked continuity, what belongs in daily writeback only, what can become long-term personalization, and how user correction overrides prior memory.
+
+Concrete implementation evidence:
+https://github.com/redwakame/openclaw-continuity
+
+CMCP remains the primary review artifact. OpenClaw Continuity is linked only to show the usable OpenClaw skill package behind the policy boundary.
 
 The artifact includes a contract, runtime guard, host integration boundary, reference adapter, adversarial verification, end-to-end verification, and an audit summary.
 
@@ -214,6 +241,11 @@ https://github.com/redwakame/cmcp
 
 CMCP is a policy-first continuity memory contract for long-running agents. It is built as a concrete OpenClaw-based artifact with a canonical contract, runtime guard, host integration boundary, reference adapter, adversarial verification, end-to-end verification, and an audit summary.
 
+Concrete implementation evidence:
+https://github.com/redwakame/openclaw-continuity
+
+CMCP remains the primary review artifact. OpenClaw Continuity is linked only to show the usable OpenClaw skill package behind the policy boundary.
+
 The question is whether durable agent memory should be constrained by an explicit runtime contract rather than being an implicit side effect of prompts, host glue code, or storage behavior.
 
 Anthropic-facing proposal:
@@ -236,4 +268,3 @@ I am not asking for immediate adoption. I would value a technical review by some
 - Do not submit to unofficial addresses or non-company domains.
 - Do not describe CMCP as an adopted standard.
 - Do not describe CMCP as a compliance framework.
-

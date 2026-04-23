@@ -18,6 +18,20 @@ It exists so a technical reviewer can answer, quickly:
 
 CMCP is a policy-first continuity memory bundle for OpenClaw with an explicit contract, a runtime guard, a storage boundary, and executable adversarial verification.
 
+## Concrete Implementation Reference
+
+CMCP is the primary review artifact.
+
+[OpenClaw Continuity](https://github.com/redwakame/openclaw-continuity) is a
+separate product skill package that demonstrates the same continuity problem in
+a usable OpenClaw implementation: `/new` carryover, staged memory, tracked
+follow-up, time-aware care, natural-language settings, closure, cooldown, and
+structured writeback.
+
+For OpenAI or Anthropic review, do not merge the two into one package. Treat
+OpenClaw Continuity as implementation evidence for why the CMCP policy boundary
+exists.
+
 ## 10-Minute Review Path
 
 If you only have 10 minutes, use this order:
