@@ -1,0 +1,889 @@
+{
+  "generatedAt": "2026-04-23T19:14:37.911Z",
+  "projectRoot": ".",
+  "reportPath": "runtime-data/integration-matrix/integration-matrix-report.json",
+  "logPath": "runtime-data/integration-matrix/integration-matrix-log.json",
+  "samplingStrategy": "representative_multi_host_multi_version_multi_modal_sample",
+  "scenarioCount": 7,
+  "scenarios": [
+    {
+      "id": "desktop_text_followup_v1",
+      "hostId": "desktop_chat_host",
+      "hostVersion": "1.0",
+      "modality": "text",
+      "wireMode": "storageAdapter",
+      "sampleReason": "baseline text host with direct storage adapter wiring",
+      "storage": {
+        "adapterId": "cmcp.file",
+        "adapterKind": "file",
+        "stateRoot": "<project-root>/runtime-data/integration-matrix/desktop_text_followup_v1/state",
+        "capabilities": {
+          "sectionReads": true,
+          "sectionWrites": true,
+          "sectionUpserts": true,
+          "settingsWrites": true,
+          "snapshotReads": true,
+          "tombstones": true,
+          "atomicSectionWrite": true
+        }
+      },
+      "steps": [
+        {
+          "stepId": "persist-followup",
+          "description": "Desktop host follow-up button maps to tracked write",
+          "normalizedEvent": {
+            "type": "message:received",
+            "action": null,
+            "persist": true,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.file",
+              "adapterKind": "file",
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/desktop_text_followup_v1/state",
+              "capabilities": {
+                "sectionReads": true,
+                "sectionWrites": true,
+                "sectionUpserts": true,
+                "settingsWrites": true,
+                "snapshotReads": true,
+                "tombstones": true,
+                "atomicSectionWrite": true
+              }
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": {
+              "memoryType": "task",
+              "sourceKind": "dialogue",
+              "sourceSurface": "host_runtime_actions",
+              "invocationArea": "explicit_followup_action",
+              "writeMode": "explicit_write_enabled",
+              "evidenceRef": "desktop-v1-turn-1"
+            }
+          },
+          "result": {
+            "candidateEvaluated": {
+              "accepted": true,
+              "persistentWrite": true,
+              "persistentWriteAuthorized": true,
+              "targetLayer": "tracked",
+              "finalLayer": "tracked",
+              "decisionStep": "tracked_promotion",
+              "ownerSurface": "host_runtime_actions",
+              "invocationArea": "explicit_followup_action",
+              "routeKey": "manualMemoryWrite",
+              "route": [
+                "cmcp_policy_or_host_runtime_actions",
+                "cmcp_guard",
+                "cmcp_core_rules_and_schemas",
+                "host_storage_layer"
+              ],
+              "checkedSteps": [
+                "explicit_user_correction",
+                "forbidden_persistence_filter",
+                "settings_only_routing",
+                "staged_eligibility",
+                "tracked_promotion"
+              ],
+              "reasons": [
+                "tracked_promotion_rule_matched"
+              ]
+            },
+            "candidatePersisted": {
+              "persisted": true,
+              "finalLayer": "tracked",
+              "storage": {
+                "adapterId": "cmcp.file",
+                "adapterKind": "file",
+                "stateRoot": "<project-root>/runtime-data/integration-matrix/desktop_text_followup_v1/state",
+                "capabilities": {
+                  "sectionReads": true,
+                  "sectionWrites": true,
+                  "sectionUpserts": true,
+                  "settingsWrites": true,
+                  "snapshotReads": true,
+                  "tombstones": true,
+                  "atomicSectionWrite": true
+                }
+              },
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/desktop_text_followup_v1/state",
+              "touchedSections": [
+                "staged",
+                "tracked",
+                "daily_memory"
+              ],
+              "createdIds": [
+                "tracked-ebcb3d28-fa23-4c24-8e41-e1090e7ec901",
+                "daily-3ef62b32-88e4-410a-85a7-c4d1d99dd1bf"
+              ],
+              "updatedIds": [],
+              "removedIds": [],
+              "tombstoneCount": 0,
+              "memoryPersisted": true,
+              "settingsPersisted": false,
+              "correctionPersisted": false,
+              "persistenceKinds": [
+                "memory"
+              ]
+            },
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": null,
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": {
+        "counts": {
+          "tracked": 1,
+          "staged": 0,
+          "daily": 1,
+          "longTerm": 0,
+          "tombstones": 0
+        },
+        "backgroundProfile": {}
+      }
+    },
+    {
+      "id": "voice_transcript_save_v1_1",
+      "hostId": "voice_note_host",
+      "hostVersion": "1.1",
+      "modality": "voice_transcript",
+      "wireMode": "storageDescriptor",
+      "sampleReason": "audio transcript host using storage descriptor instead of direct adapter object",
+      "storage": {
+        "adapterId": "cmcp.file",
+        "adapterKind": "file",
+        "stateRoot": "<project-root>/runtime-data/integration-matrix/voice_transcript_save_v1_1/state"
+      },
+      "steps": [
+        {
+          "stepId": "persist-voice-memory",
+          "description": "Voice transcript save action maps to staged write",
+          "normalizedEvent": {
+            "type": "message:received",
+            "action": null,
+            "persist": true,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.file",
+              "adapterKind": "file",
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/voice_transcript_save_v1_1/state"
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": {
+              "memoryType": "task",
+              "sourceKind": "dialogue",
+              "sourceSurface": "host_runtime_actions",
+              "invocationArea": "explicit_memory_save_action",
+              "writeMode": "explicit_write_enabled",
+              "evidenceRef": "voice-clip-101"
+            }
+          },
+          "result": {
+            "candidateEvaluated": {
+              "accepted": true,
+              "persistentWrite": true,
+              "persistentWriteAuthorized": true,
+              "targetLayer": "staged",
+              "finalLayer": "staged",
+              "decisionStep": "staged_eligibility",
+              "ownerSurface": "host_runtime_actions",
+              "invocationArea": "explicit_memory_save_action",
+              "routeKey": "manualMemoryWrite",
+              "route": [
+                "cmcp_policy_or_host_runtime_actions",
+                "cmcp_guard",
+                "cmcp_core_rules_and_schemas",
+                "host_storage_layer"
+              ],
+              "checkedSteps": [
+                "explicit_user_correction",
+                "forbidden_persistence_filter",
+                "settings_only_routing",
+                "staged_eligibility",
+                "tracked_promotion"
+              ],
+              "reasons": [
+                "staged_write_rule_matched"
+              ]
+            },
+            "candidatePersisted": {
+              "persisted": true,
+              "finalLayer": "staged",
+              "storage": {
+                "adapterId": "cmcp.file",
+                "adapterKind": "file",
+                "stateRoot": "<project-root>/runtime-data/integration-matrix/voice_transcript_save_v1_1/state",
+                "capabilities": {
+                  "sectionReads": true,
+                  "sectionWrites": true,
+                  "sectionUpserts": true,
+                  "settingsWrites": true,
+                  "snapshotReads": true,
+                  "tombstones": true,
+                  "atomicSectionWrite": true
+                }
+              },
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/voice_transcript_save_v1_1/state",
+              "touchedSections": [
+                "staged",
+                "daily_memory"
+              ],
+              "createdIds": [
+                "staged-ea9aaa18-b62c-4215-9140-463fbb5adba4",
+                "daily-c6853ff6-0552-4dec-857e-0d648571b529"
+              ],
+              "updatedIds": [],
+              "removedIds": [],
+              "tombstoneCount": 0,
+              "memoryPersisted": true,
+              "settingsPersisted": false,
+              "correctionPersisted": false,
+              "persistenceKinds": [
+                "memory"
+              ]
+            },
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": null,
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": {
+        "counts": {
+          "tracked": 0,
+          "staged": 1,
+          "daily": 1,
+          "longTerm": 0,
+          "tombstones": 0
+        },
+        "backgroundProfile": {}
+      }
+    },
+    {
+      "id": "image_caption_followup_v2",
+      "hostId": "image_review_host",
+      "hostVersion": "2.0",
+      "modality": "image_caption",
+      "wireMode": "storageAdapter",
+      "sampleReason": "image review host routes caption-derived follow-up through explicit tracking action",
+      "storage": {
+        "adapterId": "cmcp.file",
+        "adapterKind": "file",
+        "stateRoot": "<project-root>/runtime-data/integration-matrix/image_caption_followup_v2/state",
+        "capabilities": {
+          "sectionReads": true,
+          "sectionWrites": true,
+          "sectionUpserts": true,
+          "settingsWrites": true,
+          "snapshotReads": true,
+          "tombstones": true,
+          "atomicSectionWrite": true
+        }
+      },
+      "steps": [
+        {
+          "stepId": "persist-image-followup",
+          "description": "Image caption plus explicit follow-up becomes tracked",
+          "normalizedEvent": {
+            "type": "message:received",
+            "action": null,
+            "persist": true,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.file",
+              "adapterKind": "file",
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/image_caption_followup_v2/state",
+              "capabilities": {
+                "sectionReads": true,
+                "sectionWrites": true,
+                "sectionUpserts": true,
+                "settingsWrites": true,
+                "snapshotReads": true,
+                "tombstones": true,
+                "atomicSectionWrite": true
+              }
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": {
+              "memoryType": "task",
+              "sourceKind": "dialogue",
+              "sourceSurface": "host_runtime_actions",
+              "invocationArea": "explicit_followup_action",
+              "writeMode": "explicit_write_enabled",
+              "evidenceRef": "image-review-22"
+            }
+          },
+          "result": {
+            "candidateEvaluated": {
+              "accepted": true,
+              "persistentWrite": true,
+              "persistentWriteAuthorized": true,
+              "targetLayer": "tracked",
+              "finalLayer": "tracked",
+              "decisionStep": "tracked_promotion",
+              "ownerSurface": "host_runtime_actions",
+              "invocationArea": "explicit_followup_action",
+              "routeKey": "manualMemoryWrite",
+              "route": [
+                "cmcp_policy_or_host_runtime_actions",
+                "cmcp_guard",
+                "cmcp_core_rules_and_schemas",
+                "host_storage_layer"
+              ],
+              "checkedSteps": [
+                "explicit_user_correction",
+                "forbidden_persistence_filter",
+                "settings_only_routing",
+                "staged_eligibility",
+                "tracked_promotion"
+              ],
+              "reasons": [
+                "tracked_promotion_rule_matched"
+              ]
+            },
+            "candidatePersisted": {
+              "persisted": true,
+              "finalLayer": "tracked",
+              "storage": {
+                "adapterId": "cmcp.file",
+                "adapterKind": "file",
+                "stateRoot": "<project-root>/runtime-data/integration-matrix/image_caption_followup_v2/state",
+                "capabilities": {
+                  "sectionReads": true,
+                  "sectionWrites": true,
+                  "sectionUpserts": true,
+                  "settingsWrites": true,
+                  "snapshotReads": true,
+                  "tombstones": true,
+                  "atomicSectionWrite": true
+                }
+              },
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/image_caption_followup_v2/state",
+              "touchedSections": [
+                "staged",
+                "tracked",
+                "daily_memory"
+              ],
+              "createdIds": [
+                "tracked-6c5335a7-2eec-4844-9ec3-4b90031e8845",
+                "daily-24ea1edf-5451-48ff-92cc-4374771c07b0"
+              ],
+              "updatedIds": [],
+              "removedIds": [],
+              "tombstoneCount": 0,
+              "memoryPersisted": true,
+              "settingsPersisted": false,
+              "correctionPersisted": false,
+              "persistenceKinds": [
+                "memory"
+              ]
+            },
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": null,
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": {
+        "counts": {
+          "tracked": 1,
+          "staged": 0,
+          "daily": 1,
+          "longTerm": 0,
+          "tombstones": 0
+        },
+        "backgroundProfile": {}
+      }
+    },
+    {
+      "id": "setup_form_timezone_v1",
+      "hostId": "setup_wizard_host",
+      "hostVersion": "1.0",
+      "modality": "form_profile",
+      "wireMode": "storageDescriptor",
+      "sampleReason": "installer/onboarding surface storing disclosed profile data then reading it back during /new",
+      "storage": {
+        "adapterId": "cmcp.file",
+        "adapterKind": "file",
+        "stateRoot": "<project-root>/runtime-data/integration-matrix/setup_form_timezone_v1/state"
+      },
+      "steps": [
+        {
+          "stepId": "persist-timezone",
+          "description": "Setup wizard writes disclosed timezone into long-term personalization",
+          "normalizedEvent": {
+            "type": "message:received",
+            "action": null,
+            "persist": true,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.file",
+              "adapterKind": "file",
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/setup_form_timezone_v1/state"
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": {
+              "memoryType": "profile",
+              "sourceKind": "onboarding",
+              "sourceSurface": "cmcp_setup",
+              "invocationArea": "onboarding_disclosed_profile_capture",
+              "writeMode": "explicit_write_enabled",
+              "evidenceRef": "setup-timezone-1"
+            }
+          },
+          "result": {
+            "candidateEvaluated": {
+              "accepted": true,
+              "persistentWrite": true,
+              "persistentWriteAuthorized": true,
+              "targetLayer": "long_term_personalization",
+              "finalLayer": "long_term_personalization",
+              "decisionStep": "long_term_personalization",
+              "ownerSurface": "cmcp_setup",
+              "invocationArea": "onboarding_disclosed_profile_capture",
+              "routeKey": "onboardingProfileCapture",
+              "route": [
+                "cmcp_setup",
+                "cmcp_guard_for_memory_targets",
+                "settings_store_or_memory_store"
+              ],
+              "checkedSteps": [
+                "explicit_user_correction",
+                "forbidden_persistence_filter",
+                "settings_only_routing",
+                "staged_eligibility",
+                "tracked_promotion",
+                "long_term_personalization"
+              ],
+              "reasons": [
+                "long_term_personalization_rule_matched"
+              ]
+            },
+            "candidatePersisted": {
+              "persisted": true,
+              "finalLayer": "long_term_personalization",
+              "storage": {
+                "adapterId": "cmcp.file",
+                "adapterKind": "file",
+                "stateRoot": "<project-root>/runtime-data/integration-matrix/setup_form_timezone_v1/state",
+                "capabilities": {
+                  "sectionReads": true,
+                  "sectionWrites": true,
+                  "sectionUpserts": true,
+                  "settingsWrites": true,
+                  "snapshotReads": true,
+                  "tombstones": true,
+                  "atomicSectionWrite": true
+                }
+              },
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/setup_form_timezone_v1/state",
+              "touchedSections": [
+                "long_term_personalization",
+                "daily_memory"
+              ],
+              "createdIds": [
+                "long_term_personalization-3558a9e6-f5a4-484c-8701-46e3255cd9d4",
+                "daily-78f6aa82-3861-4321-a3b4-15255a09f6e5"
+              ],
+              "updatedIds": [],
+              "removedIds": [],
+              "tombstoneCount": 0,
+              "memoryPersisted": true,
+              "settingsPersisted": false,
+              "correctionPersisted": false,
+              "persistenceKinds": [
+                "memory"
+              ]
+            },
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": null,
+            "storageFailure": null
+          }
+        },
+        {
+          "stepId": "preview-new",
+          "description": "Setup host asks /new to assemble continuity from stored snapshot",
+          "normalizedEvent": {
+            "type": "command",
+            "action": "new",
+            "persist": false,
+            "readFromState": true,
+            "storage": {
+              "adapterId": "cmcp.file",
+              "adapterKind": "file",
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/setup_form_timezone_v1/state"
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": null
+          },
+          "result": {
+            "candidateEvaluated": null,
+            "candidatePersisted": null,
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": {
+              "continuity_source": "none",
+              "anchor_level": "none",
+              "memory_id": null,
+              "recent_user_context": [],
+              "latest_user_owned_clause": null,
+              "resolution_state": "none",
+              "background_profile": {
+                "timezone": "UTC+8"
+              },
+              "selection_priority": [
+                "tracked.active_unresolved",
+                "staged.recent_touched_unresolved",
+                "daily_memory.linked_trace",
+                "long_term_personalization.background_only"
+              ],
+              "selected_by": "cmcp_guard"
+            },
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": {
+        "counts": {
+          "tracked": 0,
+          "staged": 0,
+          "daily": 1,
+          "longTerm": 1,
+          "tombstones": 0
+        },
+        "backgroundProfile": {
+          "timezone": "UTC+8"
+        }
+      }
+    },
+    {
+      "id": "legacy_v2_followup_v0_9",
+      "hostId": "legacy_v2_runtime",
+      "hostVersion": "0.9",
+      "modality": "text",
+      "wireMode": "storageDescriptor",
+      "sampleReason": "legacy host version maps into Host Runtime Actions without changing CMCP policy ownership",
+      "storage": {
+        "adapterId": "cmcp.file",
+        "adapterKind": "file",
+        "stateRoot": "<project-root>/runtime-data/integration-matrix/legacy_v2_followup_v0_9/state"
+      },
+      "steps": [
+        {
+          "stepId": "persist-legacy-followup",
+          "description": "Legacy V2 wrapper maps remember+track semantics to explicit follow-up action",
+          "normalizedEvent": {
+            "type": "message:received",
+            "action": null,
+            "persist": true,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.file",
+              "adapterKind": "file",
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/legacy_v2_followup_v0_9/state"
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": {
+              "memoryType": "task",
+              "sourceKind": "dialogue",
+              "sourceSurface": "host_runtime_actions",
+              "invocationArea": "explicit_followup_action",
+              "writeMode": "explicit_write_enabled",
+              "evidenceRef": "legacy-v2-turn-1"
+            }
+          },
+          "result": {
+            "candidateEvaluated": {
+              "accepted": true,
+              "persistentWrite": true,
+              "persistentWriteAuthorized": true,
+              "targetLayer": "tracked",
+              "finalLayer": "tracked",
+              "decisionStep": "tracked_promotion",
+              "ownerSurface": "host_runtime_actions",
+              "invocationArea": "explicit_followup_action",
+              "routeKey": "manualMemoryWrite",
+              "route": [
+                "cmcp_policy_or_host_runtime_actions",
+                "cmcp_guard",
+                "cmcp_core_rules_and_schemas",
+                "host_storage_layer"
+              ],
+              "checkedSteps": [
+                "explicit_user_correction",
+                "forbidden_persistence_filter",
+                "settings_only_routing",
+                "staged_eligibility",
+                "tracked_promotion"
+              ],
+              "reasons": [
+                "tracked_promotion_rule_matched"
+              ]
+            },
+            "candidatePersisted": {
+              "persisted": true,
+              "finalLayer": "tracked",
+              "storage": {
+                "adapterId": "cmcp.file",
+                "adapterKind": "file",
+                "stateRoot": "<project-root>/runtime-data/integration-matrix/legacy_v2_followup_v0_9/state",
+                "capabilities": {
+                  "sectionReads": true,
+                  "sectionWrites": true,
+                  "sectionUpserts": true,
+                  "settingsWrites": true,
+                  "snapshotReads": true,
+                  "tombstones": true,
+                  "atomicSectionWrite": true
+                }
+              },
+              "stateRoot": "<project-root>/runtime-data/integration-matrix/legacy_v2_followup_v0_9/state",
+              "touchedSections": [
+                "staged",
+                "tracked",
+                "daily_memory"
+              ],
+              "createdIds": [
+                "tracked-21ff378e-ea31-4782-8d76-83bdd836c93f",
+                "daily-51388f74-33e2-49ad-92e3-c69e53c5ad42"
+              ],
+              "updatedIds": [],
+              "removedIds": [],
+              "tombstoneCount": 0,
+              "memoryPersisted": true,
+              "settingsPersisted": false,
+              "correctionPersisted": false,
+              "persistenceKinds": [
+                "memory"
+              ]
+            },
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": null,
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": {
+        "counts": {
+          "tracked": 1,
+          "staged": 0,
+          "daily": 1,
+          "longTerm": 0,
+          "tombstones": 0
+        },
+        "backgroundProfile": {}
+      }
+    },
+    {
+      "id": "web_console_new_with_host_arrays_v1_2",
+      "hostId": "web_console_host",
+      "hostVersion": "1.2",
+      "modality": "host_arrays",
+      "wireMode": "hostArraysOnly",
+      "sampleReason": "host-provided arrays should drive /new even when bundled storage resolution is invalid",
+      "storage": {
+        "adapterId": "cmcp.unresolved",
+        "adapterKind": "unsupported_remote",
+        "stateRoot": null
+      },
+      "steps": [
+        {
+          "stepId": "preview-new-from-arrays",
+          "description": "Host arrays bypass storage resolution for /new assembly",
+          "normalizedEvent": {
+            "type": "command",
+            "action": "new",
+            "persist": false,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.unresolved",
+              "adapterKind": "unsupported_remote",
+              "stateRoot": null
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 1,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": null
+          },
+          "result": {
+            "candidateEvaluated": null,
+            "candidatePersisted": null,
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": {
+              "continuity_source": "tracked",
+              "anchor_level": "tracked_followup",
+              "memory_id": "tracked-host-array-1",
+              "recent_user_context": [
+                {
+                  "role": "user",
+                  "text": "host arrays should continue this tracked task"
+                }
+              ],
+              "latest_user_owned_clause": "host arrays should continue this tracked task",
+              "resolution_state": "active",
+              "background_profile": {
+                "timezone": "UTC+8"
+              },
+              "selection_priority": [
+                "tracked.active_unresolved",
+                "staged.recent_touched_unresolved",
+                "daily_memory.linked_trace",
+                "long_term_personalization.background_only"
+              ],
+              "selected_by": "cmcp_guard"
+            },
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": null
+    },
+    {
+      "id": "camera_scan_passive_v1",
+      "hostId": "camera_scan_host",
+      "hostVersion": "1.0",
+      "modality": "document_scan",
+      "wireMode": "hostArraysOnly",
+      "sampleReason": "passive multimodal capture without explicit write authorization should fail closed to session",
+      "storage": {
+        "adapterId": "cmcp.unresolved",
+        "adapterKind": "unsupported_remote",
+        "stateRoot": null
+      },
+      "steps": [
+        {
+          "stepId": "passive-scan",
+          "description": "Passive document scan remains session-only even with invalid storage descriptor",
+          "normalizedEvent": {
+            "type": "message:received",
+            "action": null,
+            "persist": true,
+            "readFromState": false,
+            "storage": {
+              "adapterId": "cmcp.unresolved",
+              "adapterKind": "unsupported_remote",
+              "stateRoot": null
+            },
+            "hostArrayCounts": {
+              "trackedRecords": 0,
+              "stagedRecords": 0,
+              "dailyRecords": 0
+            },
+            "policyCandidate": {
+              "memoryType": "event",
+              "sourceKind": "dialogue",
+              "sourceSurface": null,
+              "invocationArea": null,
+              "writeMode": null,
+              "evidenceRef": "camera-scan-1"
+            }
+          },
+          "result": {
+            "candidateEvaluated": {
+              "accepted": false,
+              "persistentWrite": false,
+              "persistentWriteAuthorized": false,
+              "targetLayer": null,
+              "finalLayer": "session",
+              "decisionStep": "session_only_no_persistent_write",
+              "ownerSurface": null,
+              "invocationArea": null,
+              "routeKey": null,
+              "route": [],
+              "checkedSteps": [
+                "explicit_user_correction",
+                "forbidden_persistence_filter",
+                "settings_only_routing",
+                "staged_eligibility",
+                "tracked_promotion",
+                "long_term_personalization",
+                "session_only_no_persistent_write"
+              ],
+              "reasons": [
+                "write_not_explicitly_enabled",
+                "missing_invocation_area",
+                "unknown_invocation_area",
+                "missing_allowed_personalization_type",
+                "long_term_signal_not_strong_enough",
+                "no_write_rule_matched_or_write_not_authorized"
+              ]
+            },
+            "candidatePersisted": {
+              "persisted": false,
+              "finalLayer": "session",
+              "storage": {
+                "adapterId": "cmcp.unresolved",
+                "adapterKind": "unsupported_remote",
+                "stateRoot": null,
+                "capabilities": {
+                  "sectionReads": false,
+                  "sectionWrites": false,
+                  "sectionUpserts": false,
+                  "settingsWrites": false,
+                  "snapshotReads": false,
+                  "tombstones": false,
+                  "atomicSectionWrite": false
+                }
+              },
+              "stateRoot": null,
+              "touchedSections": [],
+              "createdIds": [],
+              "updatedIds": [],
+              "removedIds": [],
+              "tombstoneCount": 0,
+              "memoryPersisted": false,
+              "settingsPersisted": false,
+              "correctionPersisted": false,
+              "persistenceKinds": [],
+              "reasons": [
+                "write_not_explicitly_enabled",
+                "missing_invocation_area",
+                "unknown_invocation_area",
+                "missing_allowed_personalization_type",
+                "long_term_signal_not_strong_enough",
+                "no_write_rule_matched_or_write_not_authorized"
+              ]
+            },
+            "correctionEvaluated": null,
+            "correctionPersisted": null,
+            "newSelection": null,
+            "storageFailure": null
+          }
+        }
+      ],
+      "snapshotSummary": null
+    }
+  ]
+}

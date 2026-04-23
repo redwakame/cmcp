@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "daily-51388f74-33e2-49ad-92e3-c69e53c5ad42",
+    "layer": "daily_memory",
+    "memory_type": "task",
+    "source_kind": "system_writeback",
+    "source_surface": "cmcp_guard",
+    "source_ref": "tracked-21ff378e-ea31-4782-8d76-83bdd836c93f",
+    "user_ownership": "explicit",
+    "confidence": 1,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.910Z",
+    "updated_at": "2026-04-23T19:14:37.910Z",
+    "owner_surface": "cmcp_guard",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "derived_from": "tracked-21ff378e-ea31-4782-8d76-83bdd836c93f",
+    "change_type": "created",
+    "latest_user_owned_clause": "legacy host: pick up the migration notes after lunch",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "legacy host: pick up the migration notes after lunch"
+      }
+    ]
+  }
+]

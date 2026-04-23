@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-04-23T19:14:37.746Z",
+  "projectRoot": ".",
+  "demoRoot": "runtime-data/mock-host-demo",
+  "stateRoot": "runtime-data/mock-host-demo/state",
+  "storage": {
+    "adapterId": "cmcp.mock_host",
+    "adapterKind": "mock-host-file",
+    "stateRoot": "<project-root>/runtime-data/mock-host-demo/state",
+    "capabilities": {
+      "sectionReads": true,
+      "sectionWrites": true,
+      "sectionUpserts": true,
+      "settingsWrites": true,
+      "snapshotReads": true,
+      "tombstones": true,
+      "atomicSectionWrite": true
+    },
+    "hostName": "cmcp-minimal-host"
+  },
+  "steps": {
+    "bootstrap": {
+      "logCount": 1
+    },
+    "trackedWrite": {
+      "persisted": true,
+      "finalLayer": "tracked",
+      "storage": {
+        "adapterId": "cmcp.mock_host",
+        "adapterKind": "mock-host-file",
+        "stateRoot": "<project-root>/runtime-data/mock-host-demo/state",
+        "capabilities": {
+          "sectionReads": true,
+          "sectionWrites": true,
+          "sectionUpserts": true,
+          "settingsWrites": true,
+          "snapshotReads": true,
+          "tombstones": true,
+          "atomicSectionWrite": true
+        }
+      },
+      "stateRoot": "<project-root>/runtime-data/mock-host-demo/state",
+      "touchedSections": [
+        "staged",
+        "tracked",
+        "daily_memory"
+      ],
+      "createdIds": [
+        "tracked-a4a31980-4a4b-4ce3-9b05-cd4f7a13f39f",
+        "daily-479769b5-356f-4232-993e-fbae0e79d56e"
+      ],
+      "updatedIds": [],
+      "removedIds": [],
+      "tombstoneCount": 0,
+      "memoryPersisted": true,
+      "settingsPersisted": false,
+      "correctionPersisted": false,
+      "persistenceKinds": [
+        "memory"
+      ]
+    },
+    "onboardingWrite": {
+      "persisted": true,
+      "finalLayer": "long_term_personalization",
+      "storage": {
+        "adapterId": "cmcp.mock_host",
+        "adapterKind": "mock-host-file",
+        "stateRoot": "<project-root>/runtime-data/mock-host-demo/state",
+        "capabilities": {
+          "sectionReads": true,
+          "sectionWrites": true,
+          "sectionUpserts": true,
+          "settingsWrites": true,
+          "snapshotReads": true,
+          "tombstones": true,
+          "atomicSectionWrite": true
+        }
+      },
+      "stateRoot": "<project-root>/runtime-data/mock-host-demo/state",
+      "touchedSections": [
+        "long_term_personalization",
+        "daily_memory"
+      ],
+      "createdIds": [
+        "long_term_personalization-0cd193a4-8f78-4ac5-a504-399020b52fcd",
+        "daily-aa0383c0-0a78-4887-b710-85974bbc93c2"
+      ],
+      "updatedIds": [],
+      "removedIds": [],
+      "tombstoneCount": 0,
+      "memoryPersisted": true,
+      "settingsPersisted": false,
+      "correctionPersisted": false,
+      "persistenceKinds": [
+        "memory"
+      ]
+    },
+    "newSelection": {
+      "continuity_source": "tracked",
+      "anchor_level": "tracked_followup",
+      "memory_id": "tracked-a4a31980-4a4b-4ce3-9b05-cd4f7a13f39f",
+      "recent_user_context": [
+        {
+          "role": "user",
+          "text": "send the final CMCP verification package tomorrow morning"
+        }
+      ],
+      "latest_user_owned_clause": "send the final CMCP verification package tomorrow morning",
+      "resolution_state": "active",
+      "background_profile": {
+        "timezone": "UTC+8"
+      },
+      "selection_priority": [
+        "tracked.active_unresolved",
+        "staged.recent_touched_unresolved",
+        "daily_memory.linked_trace",
+        "long_term_personalization.background_only"
+      ],
+      "selected_by": "cmcp_guard"
+    }
+  },
+  "snapshotSummary": {
+    "settings": {},
+    "counts": {
+      "tracked": 1,
+      "staged": 0,
+      "daily": 2,
+      "longTerm": 1,
+      "tombstones": 0
+    },
+    "backgroundProfile": {
+      "timezone": "UTC+8"
+    }
+  }
+}

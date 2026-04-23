@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "daily-3ef62b32-88e4-410a-85a7-c4d1d99dd1bf",
+    "layer": "daily_memory",
+    "memory_type": "task",
+    "source_kind": "system_writeback",
+    "source_surface": "cmcp_guard",
+    "source_ref": "tracked-ebcb3d28-fa23-4c24-8e41-e1090e7ec901",
+    "user_ownership": "explicit",
+    "confidence": 1,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.902Z",
+    "updated_at": "2026-04-23T19:14:37.902Z",
+    "owner_surface": "cmcp_guard",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "derived_from": "tracked-ebcb3d28-fa23-4c24-8e41-e1090e7ec901",
+    "change_type": "created",
+    "latest_user_owned_clause": "desktop host follow-up: resend the CMCP package tomorrow",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "desktop host follow-up: resend the CMCP package tomorrow"
+      }
+    ]
+  }
+]

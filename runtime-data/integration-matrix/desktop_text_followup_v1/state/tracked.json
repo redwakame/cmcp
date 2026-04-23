@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "tracked-ebcb3d28-fa23-4c24-8e41-e1090e7ec901",
+    "layer": "tracked",
+    "memory_type": "task",
+    "source_kind": "dialogue",
+    "source_surface": "host_runtime_actions",
+    "source_ref": "desktop-v1-turn-1",
+    "user_ownership": "explicit",
+    "confidence": 0.95,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.902Z",
+    "updated_at": "2026-04-23T19:14:37.902Z",
+    "owner_surface": "host_runtime_actions",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "desktop host follow-up: resend the CMCP package tomorrow"
+      }
+    ],
+    "continuity_value": "desktop host follow-up: resend the CMCP package tomorrow",
+    "latest_user_owned_clause": "desktop host follow-up: resend the CMCP package tomorrow",
+    "resolution_condition": "user_marks_done_or_followup_completed"
+  }
+]

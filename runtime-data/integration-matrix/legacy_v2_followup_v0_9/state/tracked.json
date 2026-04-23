@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "tracked-21ff378e-ea31-4782-8d76-83bdd836c93f",
+    "layer": "tracked",
+    "memory_type": "task",
+    "source_kind": "dialogue",
+    "source_surface": "host_runtime_actions",
+    "source_ref": "legacy-v2-turn-1",
+    "user_ownership": "explicit",
+    "confidence": 0.95,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.910Z",
+    "updated_at": "2026-04-23T19:14:37.910Z",
+    "owner_surface": "host_runtime_actions",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "legacy host: pick up the migration notes after lunch"
+      }
+    ],
+    "continuity_value": "legacy host: pick up the migration notes after lunch",
+    "latest_user_owned_clause": "legacy host: pick up the migration notes after lunch",
+    "resolution_condition": "user_marks_done_or_followup_completed"
+  }
+]

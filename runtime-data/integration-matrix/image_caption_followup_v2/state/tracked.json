@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "tracked-6c5335a7-2eec-4844-9ec3-4b90031e8845",
+    "layer": "tracked",
+    "memory_type": "task",
+    "source_kind": "dialogue",
+    "source_surface": "host_runtime_actions",
+    "source_ref": "image-review-22",
+    "user_ownership": "explicit",
+    "confidence": 0.95,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.907Z",
+    "updated_at": "2026-04-23T19:14:37.907Z",
+    "owner_surface": "host_runtime_actions",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "image review: revisit the packaging mockup after legal review"
+      }
+    ],
+    "continuity_value": "image review: revisit the packaging mockup after legal review",
+    "latest_user_owned_clause": "image review: revisit the packaging mockup after legal review",
+    "resolution_condition": "user_marks_done_or_followup_completed"
+  }
+]

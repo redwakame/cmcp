@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "tracked-a4a31980-4a4b-4ce3-9b05-cd4f7a13f39f",
+    "layer": "tracked",
+    "memory_type": "task",
+    "source_kind": "dialogue",
+    "source_surface": "host_runtime_actions",
+    "source_ref": "mock-host-turn-1",
+    "user_ownership": "explicit",
+    "confidence": 0.95,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.743Z",
+    "updated_at": "2026-04-23T19:14:37.743Z",
+    "owner_surface": "host_runtime_actions",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "send the final CMCP verification package tomorrow morning"
+      }
+    ],
+    "continuity_value": "send the final CMCP verification package tomorrow morning",
+    "latest_user_owned_clause": "send the final CMCP verification package tomorrow morning",
+    "resolution_condition": "user_marks_done_or_followup_completed"
+  }
+]

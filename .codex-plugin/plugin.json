@@ -1,0 +1,26 @@
+{
+  "name": "cmcp-openclaw",
+  "version": "0.1.0",
+  "description": "Continuity Memory Contract Plus (CMCP) for OpenClaw: a policy-first bundle with a canonical skill, hook scaffold, and runtime policy helpers.",
+  "license": "MIT-0",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Continuity Memory Contract Plus (CMCP)",
+    "shortDescription": "CMCP Core, Guard, Setup, and Policy for OpenClaw.",
+    "longDescription": "Continuity Memory Contract Plus (CMCP) defines one shared continuity memory baseline for OpenClaw, with CMCP Core as the canonical skill, CMCP Guard as the enforcement companion, CMCP Setup as the disclosed capture flow, and CMCP Policy as the UI-facing contract surface.",
+    "developerName": "Ice Fish",
+    "category": "Productivity",
+    "capabilities": [
+      "Policy",
+      "Validation",
+      "Hooks",
+      "Continuity"
+    ],
+    "defaultPrompt": [
+      "Review this write against CMCP Core.",
+      "Map the onboarding answer into settings vs memory.",
+      "Explain why CMCP Guard should allow or block this record."
+    ],
+    "brandColor": "#2156F3"
+  }
+}

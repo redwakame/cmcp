@@ -1,0 +1,23 @@
+[
+  {
+    "memory_id": "daily-78f6aa82-3861-4321-a3b4-15255a09f6e5",
+    "layer": "daily_memory",
+    "memory_type": "profile",
+    "source_kind": "system_writeback",
+    "source_surface": "cmcp_guard",
+    "source_ref": "long_term_personalization-3558a9e6-f5a4-484c-8701-46e3255cd9d4",
+    "user_ownership": "explicit",
+    "confidence": 1,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.908Z",
+    "updated_at": "2026-04-23T19:14:37.908Z",
+    "owner_surface": "cmcp_guard",
+    "invocation_area": "onboarding_disclosed_profile_capture",
+    "route_key": "onboardingProfileCapture",
+    "sensitivity": "restricted",
+    "derived_from": "long_term_personalization-3558a9e6-f5a4-484c-8701-46e3255cd9d4",
+    "change_type": "created",
+    "latest_user_owned_clause": "",
+    "anchor_turns": []
+  }
+]

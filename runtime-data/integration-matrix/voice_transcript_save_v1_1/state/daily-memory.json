@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "daily-c6853ff6-0552-4dec-857e-0d648571b529",
+    "layer": "daily_memory",
+    "memory_type": "task",
+    "source_kind": "system_writeback",
+    "source_surface": "cmcp_guard",
+    "source_ref": "staged-ea9aaa18-b62c-4215-9140-463fbb5adba4",
+    "user_ownership": "explicit",
+    "confidence": 1,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.906Z",
+    "updated_at": "2026-04-23T19:14:37.906Z",
+    "owner_surface": "cmcp_guard",
+    "invocation_area": "explicit_memory_save_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "derived_from": "staged-ea9aaa18-b62c-4215-9140-463fbb5adba4",
+    "change_type": "created",
+    "latest_user_owned_clause": "voice transcript: save the unresolved budget note for later",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "voice transcript: save the unresolved budget note for later"
+      }
+    ]
+  }
+]

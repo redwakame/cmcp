@@ -1,0 +1,41 @@
+{
+  "name": "cmcp-openclaw",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Continuity Memory Contract Plus (CMCP) for OpenClaw: a policy-first skill bundle that defines continuity memory layers, write rules, /new carryover, onboarding-derived memory, user correction, and cross-surface mapping for UI, addons, installer, product page, and V2 integration.",
+  "type": "module",
+  "license": "MIT-0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node ./scripts/check-cmcp-openclaw-bundle.mjs",
+    "acceptance": "node ./scripts/run-cmcp-acceptance-harness.mjs",
+    "adversarial": "node ./scripts/run-cmcp-adversarial-smoke.mjs",
+    "e2e": "node ./scripts/run-cmcp-end-to-end-integration-smoke.mjs",
+    "pipeline": "node ./scripts/run-cmcp-write-pipeline-smoke.mjs",
+    "host": "node ./scripts/run-cmcp-host-integration-smoke.mjs",
+    "schema": "node ./scripts/run-cmcp-runtime-schema-smoke.mjs",
+    "demo:host": "node ./scripts/run-cmcp-mock-host-demo.mjs",
+    "matrix": "node ./scripts/run-cmcp-integration-matrix.mjs"
+  },
+  "files": [
+    ".codex-plugin",
+    "skills",
+    "hooks",
+    "src",
+    "scripts"
+  ],
+  "keywords": [
+    "openclaw",
+    "skill",
+    "continuity",
+    "memory",
+    "contract",
+    "policy",
+    "onboarding",
+    "new-session",
+    "installer",
+    "ui"
+  ]
+}

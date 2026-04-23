@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cmcp.openclaw.local/schemas/cmcp-persistence-result.schema.json",
+  "title": "CMCP Persistence Result",
+  "type": "object",
+  "required": [
+    "persisted",
+    "finalLayer",
+    "storage",
+    "stateRoot",
+    "touchedSections",
+    "createdIds",
+    "updatedIds",
+    "removedIds",
+    "tombstoneCount"
+  ],
+  "properties": {
+    "persisted": {
+      "type": "boolean"
+    },
+    "memoryPersisted": {
+      "type": "boolean"
+    },
+    "settingsPersisted": {
+      "type": "boolean"
+    },
+    "correctionPersisted": {
+      "type": "boolean"
+    },
+    "persistenceKinds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "memory",
+          "settings",
+          "correction"
+        ]
+      }
+    },
+    "finalLayer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "storage": {
+      "$ref": "https://cmcp.openclaw.local/schemas/cmcp-storage-adapter-descriptor.schema.json"
+    },
+    "stateRoot": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "touchedSections": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "createdIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "updatedIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "removedIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "tombstoneCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": true
+}

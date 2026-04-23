@@ -1,0 +1,28 @@
+[
+  {
+    "memory_id": "daily-24ea1edf-5451-48ff-92cc-4374771c07b0",
+    "layer": "daily_memory",
+    "memory_type": "task",
+    "source_kind": "system_writeback",
+    "source_surface": "cmcp_guard",
+    "source_ref": "tracked-6c5335a7-2eec-4844-9ec3-4b90031e8845",
+    "user_ownership": "explicit",
+    "confidence": 1,
+    "status": "active",
+    "created_at": "2026-04-23T19:14:37.907Z",
+    "updated_at": "2026-04-23T19:14:37.907Z",
+    "owner_surface": "cmcp_guard",
+    "invocation_area": "explicit_followup_action",
+    "route_key": "manualMemoryWrite",
+    "sensitivity": "ordinary",
+    "derived_from": "tracked-6c5335a7-2eec-4844-9ec3-4b90031e8845",
+    "change_type": "created",
+    "latest_user_owned_clause": "image review: revisit the packaging mockup after legal review",
+    "anchor_turns": [
+      {
+        "role": "user",
+        "text": "image review: revisit the packaging mockup after legal review"
+      }
+    ]
+  }
+]
